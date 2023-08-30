@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*'
   s.dependency 'FlutterMacOS'
 
+  s.vendored_libraries = 'Libraries/**/*'
+
   s.platform = :osx
   s.osx.deployment_target = '10.11'
   s.swift_version = '5.0'
