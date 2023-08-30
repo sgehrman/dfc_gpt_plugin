@@ -16,7 +16,11 @@ flutter:
 
 dependencies:
   dfc_gpt_plugin_platform_interface:
-    path: ../dfc_gpt_plugin_platform_interface
+    # path: ../dfc_gpt_plugin_platform_interface
+    git:
+      url: https://github.com/sgehrman/dfc_gpt_plugin.git
+      path: dfc_gpt_plugin_platform_interface
+
   flutter:
     sdk: flutter
 

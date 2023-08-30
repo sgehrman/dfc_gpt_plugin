@@ -18,13 +18,29 @@ flutter:
 
 dependencies:
   dfc_gpt_plugin_linux:
-    path: ../dfc_gpt_plugin_linux
+    # path: ../dfc_gpt_plugin_linux
+    git:
+      url: https://github.com/sgehrman/dfc_gpt_plugin.git
+      path: dfc_gpt_plugin_linux
+
   dfc_gpt_plugin_macos:
-    path: ../dfc_gpt_plugin_macos
+    # path: ../dfc_gpt_plugin_macos
+    git:
+      url: https://github.com/sgehrman/dfc_gpt_plugin.git
+      path: dfc_gpt_plugin_macos
+
   dfc_gpt_plugin_platform_interface:
-    path: ../dfc_gpt_plugin_platform_interface
+    # path: ../dfc_gpt_plugin_platform_interface
+    git:
+      url: https://github.com/sgehrman/dfc_gpt_plugin.git
+      path: dfc_gpt_plugin_platform_interface
+
   dfc_gpt_plugin_windows:
-    path: ../dfc_gpt_plugin_windows
+    # path: ../dfc_gpt_plugin_windows
+    git:
+      url: https://github.com/sgehrman/dfc_gpt_plugin.git
+      path: dfc_gpt_plugin_windows
+
   flutter:
     sdk: flutter
 
