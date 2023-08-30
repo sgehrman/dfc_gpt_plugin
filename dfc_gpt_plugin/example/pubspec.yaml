@@ -1,0 +1,27 @@
+name: dfc_gpt_plugin_example
+description: Demonstrates how to use the dfc_gpt_plugin plugin.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  dfc_gpt_plugin:
+    # When depending on this package from a real application you should use:
+    #   dfc_gpt_plugin: ^x.y.z
+    # See https://dart.dev/tools/pub/dependencies#version-constraints
+    # The example app is bundled with the plugin so we use a path dependency on
+    # the parent directory to use the current plugin's version.
+    path: ../
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dfc_lints:
+    git: https://github.com/sgehrman/dfc_lints
+  flutter_driver:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

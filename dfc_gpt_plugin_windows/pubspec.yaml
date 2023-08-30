@@ -1,0 +1,25 @@
+name: dfc_gpt_plugin_windows
+description: Windows implementation of the dfc_gpt_plugin plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  plugin:
+    implements: dfc_gpt_plugin
+    platforms:
+      windows:
+        pluginClass: DfcGptPluginWindows
+        dartPluginClass: DfcGptPluginWindows
+
+dependencies:
+  dfc_gpt_plugin_platform_interface:
+    path: ../dfc_gpt_plugin_platform_interface
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dfc_lints:
+    git: https://github.com/sgehrman/dfc_lints

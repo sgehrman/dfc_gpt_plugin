@@ -1,0 +1,16 @@
+name: dfc_gpt_plugin_platform_interface
+description: A common platform interface for the dfc_gpt_plugin plugin.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.0
+
+dev_dependencies:
+  dfc_lints:
+    git: https://github.com/sgehrman/dfc_lints

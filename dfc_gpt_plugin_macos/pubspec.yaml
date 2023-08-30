@@ -1,0 +1,25 @@
+name: dfc_gpt_plugin_macos
+description: MacOS implementation of the dfc_gpt_plugin plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  plugin:
+    implements: dfc_gpt_plugin
+    platforms:
+      macos:
+        pluginClass: DfcGptPluginPlugin
+        dartPluginClass: DfcGptPluginMacOS
+
+dependencies:
+  dfc_gpt_plugin_platform_interface:
+    path: ../dfc_gpt_plugin_platform_interface
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dfc_lints:
+    git: https://github.com/sgehrman/dfc_lints

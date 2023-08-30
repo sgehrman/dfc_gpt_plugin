@@ -1,0 +1,34 @@
+name: dfc_gpt_plugin
+description: gpt4all in a flutter plugin.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      linux:
+        default_package: dfc_gpt_plugin_linux
+      macos:
+        default_package: dfc_gpt_plugin_macos
+      windows:
+        default_package: dfc_gpt_plugin_windows
+
+dependencies:
+  dfc_gpt_plugin_linux:
+    path: ../dfc_gpt_plugin_linux
+  dfc_gpt_plugin_macos:
+    path: ../dfc_gpt_plugin_macos
+  dfc_gpt_plugin_platform_interface:
+    path: ../dfc_gpt_plugin_platform_interface
+  dfc_gpt_plugin_windows:
+    path: ../dfc_gpt_plugin_windows
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dfc_lints:
+    git: https://github.com/sgehrman/dfc_lints
+  plugin_platform_interface: ^2.0.0
